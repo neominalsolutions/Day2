@@ -29,7 +29,7 @@
 
   <!-- validayon kontrolüne göre mesaj verdik -->
   
-    <div *ngIf="username.hasError('required') && (username.touched || username.dirty) " class="danger">
+    <div *ngIf="username.hasError('required') && (username.touched || username.dirty) " dangerLabel>
     Name is required.
     </div>
 
@@ -41,10 +41,10 @@
 
   <!-- validayon kontrolüne göre mesaj verdik -->
 
-    <div *ngIf="email.hasError('required') && (email.touched || email.dirty)" class="danger">
+    <div *ngIf="email.hasError('required') && (email.touched || email.dirty)" dangerLabel>
       email is required
       </div>
-    <div *ngIf="email.hasError('email')" class="danger">
+    <div *ngIf="email.hasError('email')" dangerLabel>
     pls add @.
     </div>
 
