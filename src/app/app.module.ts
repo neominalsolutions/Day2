@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
+import { PipesSamplePageComponent } from './pipes-sample-page/pipes-sample-page.component';
+import { GenderPipe } from './gender.pipe';
 
 
 // Template drive form kullanırken FormsModule ile çalışıyoruz
@@ -13,7 +15,9 @@ import { TemplateFormComponent } from './template-form/template-form.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TemplateFormComponent
+    TemplateFormComponent,
+    PipesSamplePageComponent,
+    GenderPipe
   ],
   imports: [
     BrowserModule,
