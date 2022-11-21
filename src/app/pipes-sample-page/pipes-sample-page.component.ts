@@ -14,7 +14,7 @@ export class PipesSamplePageComponent implements OnInit {
 
  // pipe: template üzerindeki propertyi transform edecek bir yapı ile çalışmamızı sağlar.
   user:any = {
-    birthDate:new Date(10,10,1990), // dd-mm-yyyy
+    birthDate:new Date(2022,0,16), // dd-mm-yyyy momentjs
     firstname:'Ali',
     surname:'Tan', // TAN
     salary:3000, // 15,000 $

@@ -22,6 +22,7 @@ export class DangerLabelDirective {
   }
 
   // directive HostBinding ile event bağlayabilirsiniz. windows eventi olmalı
+  // Js tarafında AddEventListener yapıyoruz
   @HostListener('mouseover')
   mouseDown(){
     this.renderer2.setStyle(this.el.nativeElement,'font-size','16px');
